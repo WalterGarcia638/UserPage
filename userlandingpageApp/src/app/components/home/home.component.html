@@ -1,14 +1,21 @@
 <div class="container d-flex justify-content-center align-items-center vh-100">
-    <div class="row w-75 shadow-lg rounded">
+    <div class="row w-75 shadow-lg rounded-4 overflow-hidden">
+      <!-- Sección Roja con Curva -->
       <div class="col-md-6 p-0">
-        <div class="h-100 bg-danger d-flex justify-content-center align-items-center">
-          <img src="assets/logo.png" class="img-fluid" alt="Logo" style="width: 150px;">
+        <div class="curved-bg d-flex justify-content-center align-items-center">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/147/147131.png"
+            class="img-fluid"
+            alt="Logo"
+            style="width: 150px;"
+          />
         </div>
       </div>
+      <!-- Sección de Home -->
       <div class="col-md-6 bg-white p-5 text-center">
         <h1>{{ title }}</h1>
         <p>{{ description }}</p>
-        <button class="btn btn-primary" (click)="fetchUserData()">Schedule Service</button>
+        <button class="btn btn-primary btn-custom" (click)="fetchUserData()">Schedule Service</button>
         <p *ngIf="userData">User: {{ userData.first_name }} {{ userData.last_name }}</p>
       </div>
     </div>

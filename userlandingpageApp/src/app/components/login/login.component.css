@@ -1,13 +1,72 @@
+/* Estilo general */
 body {
-    background-color: #f0f2f5;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
   }
   
-  .form-control {
-    border-radius: 20px;
+  /* Curva en la sección roja */
+  .curved-bg {
+    background: linear-gradient(135deg, #ff5a5a, #ff7a7a);
+    height: 100%;
+    clip-path: ellipse(100% 80% at 100% 20%);
   }
   
-  .btn-primary {
+  /* Estilo de los inputs */
+  .custom-input {
+    border: 1px solid #ddd;
+    height: 45px;
+    font-size: 0.95rem;
+    color: #555;
+    border-radius: 0;
+    padding: 10px;
+  }
+  
+  /* Botón personalizado */
+  .btn-custom {
     background-color: #007bff;
-    border-radius: 20px;
+    color: #fff;
+    border: none;
+    height: 45px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Texto pequeño y enlaces */
+  .small-link {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .small-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .small-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Ajustes adicionales */
+  h3 {
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1000px;
+  }
+  
+  /* Margen adicional para separar inputs y botón */
+  .form-group {
+    margin-bottom: 0.5rem; /* Ajusta este valor para que los inputs estén más juntos */
+  }
+  
+  .btn-custom {
+    margin-top: 2rem; /* Aumenta el espacio entre los inputs y el botón */
   }
   
