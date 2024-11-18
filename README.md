@@ -21,16 +21,17 @@ Antes de empezar, asegúrate de tener instalado:
 
 Sigue estos pasos para clonar el repositorio e instalar las dependencias:
 
+Clonar Repositorio
 ```Clonar el proyecto
 git clone <URL_DEL_REPOSITORIO>
 cd nombre-del-proyecto
 ```
 
-
+Instalar depndencias
 ```Instalar dependencias
 npm install
 ```
-
+Correr proyecto
 ```Correr el proyecto
 ng serve -o
 ```
