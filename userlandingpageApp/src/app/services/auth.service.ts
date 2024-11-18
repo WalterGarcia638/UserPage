@@ -33,6 +33,6 @@ export class AuthService {private apiUrl = 'https://reqres.in/api/login';
   }
 
   isLoggedIn(): boolean {
-    return !!localStorage.getItem('token');
+    return typeof window !== 'undefined' && !!localStorage.getItem('token');
   }
 }

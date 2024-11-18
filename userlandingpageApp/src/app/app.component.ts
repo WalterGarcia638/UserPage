@@ -24,4 +24,8 @@ export class AppComponent {
   logout() {
     this.authService.logout();
   }
+
+  isLoginRoute(): boolean {
+    return this.router.url === '/login';
+  }
 }
