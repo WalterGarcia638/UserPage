@@ -17,10 +17,14 @@ export class HomeComponent {
   userData: any;
 
   constructor(private route: ActivatedRoute, private reqresService: UserdataService) {
+    this.fetchUserData()
+   
     this.route.queryParams.subscribe((params) => {
       const section = params['section'];
       this.updateContent(section);
     });
+
+    
   }
 
   updateContent(section: string) {
@@ -55,6 +59,8 @@ export class HomeComponent {
     // Ejemplo de uso de la API de ReqRes
     this.reqresService.getUserData(1).subscribe((data) => {
       this.userData = data.data;
+
+      console.log("Datos de usuario", this.userData)
     });
   }
 }

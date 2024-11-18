@@ -3,20 +3,35 @@
       <!-- Sección Roja con Curva -->
       <div class="col-md-6 p-0">
         <div class="curved-bg d-flex justify-content-center align-items-center">
+          <!-- Avatar del usuario -->
           <img
+            *ngIf="userData?.avatar"
+            [src]="userData.avatar"
+            class="rounded-circle"
+            alt="Avatar"
+            style="width: 150px; height: 150px; object-fit: cover;"
+          />
+          <!-- Imagen por defecto si no hay avatar -->
+          <img
+            *ngIf="!userData?.avatar"
             src="https://cdn-icons-png.flaticon.com/512/147/147131.png"
             class="img-fluid"
-            alt="Logo"
+            alt="Default Avatar"
             style="width: 150px;"
           />
         </div>
       </div>
       <!-- Sección de Home -->
       <div class="col-md-6 bg-white p-5 text-center">
-        <h1>{{ title }}</h1>
-        <p>{{ description }}</p>
+        <h1>{{ userData.first_name }} {{ userData.last_name }}</h1>
+        <p>{{ userData.email }}</p>
         <button class="btn btn-primary btn-custom" (click)="fetchUserData()">Schedule Service</button>
-        <p *ngIf="userData">User: {{ userData.first_name }} {{ userData.last_name }}</p>
+        <br>
+        <br>
+        <div *ngIf="userData">
+          <p><strong>{{ title }}</strong></p>
+          <p>{{ description }}</p>
+        </div>
       </div>
     </div>
   </div>
