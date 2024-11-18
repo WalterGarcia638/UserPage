@@ -1,0 +1,10 @@
+.btn-outline-danger {
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #ff7043;
+    color: white;
+  }
+  

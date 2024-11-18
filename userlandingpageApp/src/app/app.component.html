@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Pet Care</a>
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" (click)="changeContent('Location')">Location</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="changeContent('Blog')">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="changeContent('Services')">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="changeContent('About Us')">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="changeContent('Franchise')">Franchise with Us</a>
+      </li>
+    </ul>
+    <!-- Botón de Logout -->
+    <button class="btn btn-outline-danger btn-sm" (click)="logout()">Logout</button>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

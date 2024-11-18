@@ -1,0 +1,13 @@
+body {
+    background-color: #f0f2f5;
+  }
+  
+  .form-control {
+    border-radius: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-radius: 20px;
+  }
+  

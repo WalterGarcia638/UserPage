@@ -1,0 +1,23 @@
+/* Animación de rebote para el texto 404 */
+.animate-bounce {
+    animation: bounce 1.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Estilo para centrar el contenido */
+  .container {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: #fff;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
