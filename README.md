@@ -27,5 +27,16 @@ cd nombre-del-proyecto
 ```
 
 
+```Instalar dependencias
 npm install
+```
+
+```Correr el proyecto
+ng serve -o
+```
+
+``` credenciales para el login
+Email: eve.holt@reqres.in
+Contraseña: cityslicka
+```
 
